@@ -1,0 +1,14 @@
+[project]
+name = "ml-vehicle-silhouettes"
+version = "0.1.0"
+description = "Supervised and unsupervised machine learning models classifying vehicle silhouettes from geometric features, using Python (scikit-learn, Pandas, NumPy)."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "jupyterlab",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "seaborn",
+]

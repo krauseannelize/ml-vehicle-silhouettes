@@ -1,27 +1,51 @@
 # Vehicle Silhouettes Machine Learning
 
-This project applies both supervised and unsupervised machine learning methods to the Vehicle Silhouettes dataset. The goal is to differentiate vehicles (bus, van, car) based on geometric features extracted from their silhouettes.
+Supervised and unsupervised machine learning models classifying vehicle silhouettes from geometric features, using Python (scikit-learn, Pandas, NumPy).
 
 ## Tools & Skills Used
 
-![Data%20Science](https://img.shields.io/badge/Data%20Science-Machine%20Learning-%23DC143C)
-![Python](https://img.shields.io/badge/Python-pandas-%233776AB)
-![Python](https://img.shields.io/badge/Python-numpy-%233776AB)
-![Python](https://img.shields.io/badge/Python-sklearn-%233776AB)
-![Python](https://img.shields.io/badge/Python-seaborn-%233776AB)
-![Python](https://img.shields.io/badge/Python-matplotlib-%233776AB)
-![Jupyter Notebook](https://img.shields.io/badge/Jupyter%20Notebook-Interactive%20Analysis-%23C35817)
-![Google Colab](https://img.shields.io/badge/Google%20Colab-Cloud%20Analysis-%23F9AB00)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=flat&logo=matplotlib&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=flat&logoColor=white)
+![uv](https://img.shields.io/badge/uv-DE5FE9?style=flat&logo=uv&logoColor=white)
 
 ## Quick Access
 
-- [Supervised | Jupyter Notebook](vehicle_ml_supervised.ipynb)
-- [Supervised | Colab Notebook](https://colab.research.google.com/drive/1gexX8g6enIzGFFajfOlsLqbIJ_NlKhCu?usp=sharing)
-- [Unsupervised | Jupyter Notebook](vehicle_ml_unsupervised.ipynb)
-- [Unsupervised | Colab Notebook](https://colab.research.google.com/drive/1emJ5mp2ws0kyQn_qNT3slZE-bEK3Y4Nh?usp=sharing)
 - [Project Description](project-description.md)
-- [Vehicle Silhouettes Dataset](vehicle-silhouettes.csv)
-- [Cleaned Dataset](vehicle-silhouettes-clean.csv)
+- [Supervised Learning Notebook](notebooks/01-supervised.ipynb)
+- [Unsupervised Learning Notebook](notebooks/02-unsupervised.ipynb)
+- [Vehicle Silhouettes Dataset](data/vehicle-silhouettes.csv)
+- [Cleaned Dataset](data/vehicle-silhouettes-clean.csv)
+
+## Setup & Installation
+
+### Prerequisites
+
+- [uv](https://docs.astral.sh/uv/getting-started/installation/) installed
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/krauseannelize/ml-vehicle-silhouettes.git
+cd ml-vehicle-silhouettes
+```
+
+### 2. Install Dependencies
+
+```bash
+uv sync
+```
+
+### 3. Run the Project
+
+```bash
+uv run jupyter lab
+```
+
+> **Note:** `uv run` automatically uses the project's virtual environment—no manual activation needed.
 
 ## Project Overview
 
@@ -61,11 +85,4 @@ This project applies both supervised and unsupervised machine learning methods t
 - All supervised algorithms performed consistently well across classes, confirming strong generalization without significant overfitting.
 - Logistic Regression emerged as the most balanced and reliable supervised model, achieving 95.1% accuracy on training data and 93.9% on test data.
 - Unsupervised clustering (K-Means, Hierarchical, DBSCAN) revealed one dominant group with smaller overlapping sub-clusters that were imbalanced and did not align with true vehicle classes.
-- While clustering is not a viable alternative for Prospect Auto’s classification needs, it may still provide value for exploratory analysis or anomaly detection.
-
-## Assessment
-
-| Approach | Grade | Instructor Feedback |
-| --- | --- | --- |
-| **Supervised Learning** | 100%  | “Really good documentation, all the main insights were present and the viz on point!”|
-| **Unsupervised Learning** | 100% | “Great work! All comments were properly made and the insights/information achieved the requirements.” |
+- While clustering is not a viable alternative for Prospect Auto's classification needs, it may still provide value for exploratory analysis or anomaly detection.

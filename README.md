@@ -24,7 +24,8 @@ Supervised and unsupervised machine learning models classifying vehicle silhouet
 
 ### Prerequisites
 
-- [uv](https://docs.astral.sh/uv/getting-started/installation/) installed
+- Python 3.12+
+- [uv](https://docs.astral.sh/uv/getting-started/installation/) package manager
 
 ### 1. Clone the Repository
 
@@ -45,7 +46,7 @@ uv sync
 uv run jupyter lab
 ```
 
-> **Note:** `uv run` automatically uses the project's virtual environment—no manual activation needed.
+📌 **Note:** `uv run` automatically uses the project's virtual environment, no manual activation needed
 
 ## Project Overview
 
